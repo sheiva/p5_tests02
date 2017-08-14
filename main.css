@@ -11,6 +11,11 @@ h1{
     font-size: 4em;
     margin-top: 2em;
 }
+p{
+    font-size: .7em;
+    margin-top: 5em;
+/*    color: darkslategray;*/
+}
 a{
     color: azure;
 }
