@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+body{
+    background-color: #FF0D91;
+    font-family: "Courier New", monospace, sans-serif;
+    color: rgba(12, 12, 12, .5);
+    width: 70%;
+    margin: 0 auto;
+}
+h1{
+    font-family: 'Shrikhand', cursive;
+    font-size: 4em;
+    margin-top: 2em;
+}
+a{
+    color: azure;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/*BREAKPOINT!*/
+@media screen and (max-width: 640px) {
+    body{
+        width: 80%;
+        margin: 0 auto;
+    }
+    h1{
+        font-size: 2em;
+        margin-top: 1em;
+    }
+}
+
+/*BREAKPOINT! for smaller screens*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body{
+        width: 80%;
+        margin: 0 auto;
+    }
+    h1{
+        font-size: 2em;
+        margin-top: 1em;
+    }
+}
