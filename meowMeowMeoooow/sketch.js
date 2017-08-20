@@ -66,7 +66,7 @@ function mousePressed(){
         sound.jump(0);
         sound.play();
     }
-    if(d2 < button2/2 && mouseIsPressed==true && width >= 1400 ){
+    if(d2 < button2/2 && mouseIsPressed==true && width >= 1400){
         soundRoboKitty.jump(0);
         soundRoboKitty.play();
     }
