@@ -70,7 +70,7 @@ function draw() {
 function drawIntro(){
     fill(0);
     noStroke();
-    if(windowWidth <= 400){
+    if(windowWidth <= 500){
         textSize(30);
     }else{
         textSize(50);
@@ -190,7 +190,7 @@ function drawInstructions(){
     noStroke();
     var catchIt;
     var avoid;
-    if(windowWidth <= 400){
+    if(windowWidth <= 500){
         textSize(30);
     }else{
         textSize(50);
@@ -279,7 +279,7 @@ function keyPressed(){
 
 function Ball(paddle){ 
     this.paddle = paddle;
-    if(windowWidth <= 400){
+    if(windowWidth <= 500){
         this.size = 50;
     }else{
         this.size = 100;
@@ -327,7 +327,7 @@ function Ball(paddle){
             
             image(smallDoggie, this.x-this.size/2, this.y-this.size/2);
         }else{
-            doggie.resize(100,100);
+            doggie.resize(this.size,this.size);
             image(doggie, this.x-this.size/2, this.y-this.size/2);
         }
         rectMode(CORNER);
@@ -337,7 +337,7 @@ function Ball(paddle){
         if(windowWidth <= 400){
             image(smallKittie, this.x-this.size/2, this.y-this.size/2);
         }else{
-            kittie.resize(100,100);
+            kittie.resize(this.size,this.size);
             image(kittie, this.x-this.size/2, this.y-this.size/2);
         }
         rectMode(CORNER);
